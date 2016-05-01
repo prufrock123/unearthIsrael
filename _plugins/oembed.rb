@@ -28,9 +28,12 @@ require 'uri'
 module Jekyll
   class OEmbed < Liquid::Tag
 
-    def initialize(tag_name, text, tokens)
-       super
-       @text = text
+    def initialize(tag_name, markup, tokens)
+      super
+      # parse optional max. width/height parameters
+      @text, @embed_w, @embed_h = markup.split
+      @text.strip!
+      # @text = markup
     end
     
     def render(context)
@@ -38,7 +41,8 @@ module Jekyll
       url = Liquid::Template.parse(@text).render context
 
       # oembed look up
-      result = ::OEmbed::Providers.get(url.strip!)
+      result = ::OEmbed::Providers.get(url, { :maxwidth => @embed_w, :maxheight => @embed_h })
+      # result = ::OEmbed::Providers.get(url.strip!)
       
       # Odd: slideshare uses provider-name instead of provider_name
       provider = result.fields['provider_name'] || result.fields['provider-name'] || 'unknown'

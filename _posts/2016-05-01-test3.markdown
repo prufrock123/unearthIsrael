@@ -8,4 +8,4 @@ categories: jekyll update
 
 # This week's lesson was:
 
-{% oembed https://youtu.be/WkcjFHYIugY %}
+{% oembed https://youtu.be/WkcjFHYIugY 800 600 %}
