@@ -1,0 +1,13 @@
+---
+layout: post
+title:  "Test"
+date:   2016-05-01 10:37:53 -0500
+categories: jekyll update
+---
+This is test 2.
+
+<h1>An embedded video</h1>
+{{ oembed http://www.youtube.com/watch?v=Sv5iEK-IEzw }}
+
+<h1>An embedded presentation</h1>
+{{ oembed http://www.slideshare.net/AmitRanjan/quick-tour }}
