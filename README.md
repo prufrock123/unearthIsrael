@@ -9,7 +9,7 @@ jekyll serve
 ### To push to GH-pages (production enviornment)
 
 ```
-rake publish
+rake blog:publish
 ```
 
 
