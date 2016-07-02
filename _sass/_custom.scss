@@ -1,0 +1,17 @@
+#splash-header {
+  font-family: 'Playfair Display SC', serif;
+  font-size: 60px;
+  text-align: center;
+}
+
+a.page-link-custom {
+  color: black;
+  border: none;
+  float: none;
+  &:hover {
+    background-color: none;
+  }
+  &:visited {
+    color: black;
+  }
+}
