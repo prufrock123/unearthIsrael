@@ -36,28 +36,33 @@ a.page-link-custom {
   }
 }
 
-.card-deck {
-  margin: 0;
-  display: -webkit-flex;
-  -webkit-flex-flow: row wrap;
-}
+// .card-deck {
+//   margin: 0;
+//   display: -webkit-flex;
+//   -webkit-flex-flow: row wrap;
+// }
 
-.card {
-  margin: .75rem auto;
+.card-deck .card {
+  // margin: .75rem auto;
+  // flex: 1 0 auto;
   // max-width: 600px;
-  @media (min-width: 1210px) {
-    min-width: 23.1%;
+  @media (min-width: 1201px) {
+    flex: 1 0 23.1%;
+    min-width: 23%;
     max-width: 23.2%; 
   }
   @media (max-width: 1200px) {
+    flex: 1 0 30.5%;
     min-width: 30%;
     max-width: 31%; 
   }
   @media (max-width: 940px) {
+    flex: 1 0 46.5%;
     min-width: 46%;
     max-width: 47%;
   }
   @media (max-width: 720px) {
+    flex: 1 0 50%;
     min-width: 47%;
     max-width: 100%;
   }
