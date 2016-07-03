@@ -180,6 +180,7 @@
     .card-deck {
       display: flex;
       flex-flow: row wrap;
+      -webkit-flex-flow: row wrap;
       margin-right: -.625rem;
       margin-left: -.625rem;
 
