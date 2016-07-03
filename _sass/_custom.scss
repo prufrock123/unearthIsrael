@@ -1,8 +1,29 @@
-#splash-header {
-  font-family: 'Playfair Display SC', serif;
-  font-size: 60px;
-  text-align: center;
+.splash-page {
+  .header {
+    font-family: 'Playfair Display SC', serif;
+    font-size: 60px;
+    text-align: center;
+  }
+  .image-div {
+    max-width: 60%;
+    position: relative;
+  }
+  .link {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Playfair Display SC', serif;
+    font-size: 40px;
+    color: #fff;
+    text-shadow: 1px 1px 15px black;
+  }
+  .link:hover {
+    text-decoration: none;
+  }
+
 }
+
 
 a.page-link-custom {
   color: black;
