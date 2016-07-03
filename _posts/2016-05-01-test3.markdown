@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "TITLE OF TEST 3"
+title:  "Testing oembed"
 date:   2016-05-01 10:37:53 -0500
 tags: history
 ---
