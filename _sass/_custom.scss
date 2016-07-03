@@ -38,6 +38,8 @@ a.page-link-custom {
 
 .card-deck {
   margin: 0;
+  display: -webkit-flex;
+  -webkit-flex-flow: row wrap;
 }
 
 .card {
