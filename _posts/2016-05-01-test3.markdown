@@ -9,4 +9,4 @@ Leverage agile frameworks to provide a robust synopsis for high level overviews.
 
 # This week's lesson was:
 
-{% oembed https://youtu.be/WkcjFHYIugY 800 600 %}
+{% oembed https://youtu.be/WkcjFHYIugY %}
