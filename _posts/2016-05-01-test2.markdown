@@ -4,7 +4,7 @@ title:  "Test 2"
 date:   2016-05-01 10:37:53 -0500
 tags: jekyll
 ---
-This is test 2.
+Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. 
 
 <h1>An embedded video</h1>
 {% oembed http://www.youtube.com/watch?v=Sv5iEK-IEzw %}

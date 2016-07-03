@@ -2,22 +2,27 @@
 layout: default
 ---
 
-<div class="home">
+<div class="lessons-page">
+    <h1 class="display-2">Posts</h1>  
 
-  <h1 class="page-heading">Posts</h1>
+    <div class="card-deck-wrapper">
+      <div class="card-deck">
+        
+        {% for post in site.posts %}
+          <div class="card">
+            <img class="card-img-top" src="{{ site.baseurl }}/images/desert2.jpeg" alt="stock desert photo">
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+            <div class="card-block">
+              <h4 class="card-title">{{ post.title }}</h4>
+              <h6 class="card-subtitle text-muted"> {{ post.date | date: "%b %-d, %Y" }}</h6>
+              <p class="card-text">{{ post.excerpt }}</p>
+              <a href="{{ post.url | prepend: site.baseurl }}" class="btn btn-primary">Open</a>
+            </div>
+          </div>
+        {% endfor %}
+        
+      </div>
+    </div>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
 </div>

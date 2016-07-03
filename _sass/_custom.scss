@@ -21,9 +21,7 @@
   .link:hover {
     text-decoration: none;
   }
-
 }
-
 
 a.page-link-custom {
   color: black;
@@ -36,3 +34,20 @@ a.page-link-custom {
     color: black;
   }
 }
+
+.card {
+  margin: 0 auto .75rem;
+  max-width: 600px;
+  .card-img-top {
+    object-fit: cover;
+    height: 275px;
+    width: 100%;
+  }
+}
+
+.lessons-page {
+  .display-2 {
+    text-align: center;
+  }
+}
+
