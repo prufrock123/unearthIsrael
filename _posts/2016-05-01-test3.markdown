@@ -10,3 +10,5 @@ Leverage agile frameworks to provide a robust synopsis for high level overviews.
 # This week's lesson was:
 
 {% oembed https://youtu.be/WkcjFHYIugY %}
+
+ <a class="embedly-card" href="https://www.google.com/maps/d/u/0/embed?hl=en&mid=1o8YkF3ltFMkusAIOCEroqRlTon8">Ancient Jerusalem Walls Map Overlay</a> 
