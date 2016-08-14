@@ -74,11 +74,11 @@ a.page-link-custom {
   }
 }
 
-.lessons-page {
-  .display-2 {
-    text-align: center;
-  }
-}
+// .lessons-page {
+//   .display-2 {
+//     text-align: center;
+//   }
+// }
 
 .embed.video.YouTube {
     position: relative;
@@ -94,6 +94,15 @@ a.page-link-custom {
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+/**
+ * OTHER PAGES
+ */
+
+.page-header {
+  text-align: center;
+  margin: 10px 0;
 }
 
 // .card-deck {

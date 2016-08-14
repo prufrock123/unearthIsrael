@@ -3,19 +3,36 @@ layout: default
 title: Lesson Categories
 ---
 
-<div class="home">
 
-  <h1 class="display-3">Tags</h1>
+  <h1 class="display-2 page-header">Tags</h1>    
+  
 
-    {% capture tags %}
-      {% for tag in site.tags %}
-        {{ tag[0] }}
-      {% endfor %}
-    {% endcapture %}
-    {% assign sortedtags = tags | split:' ' | sort %}
-
-    {% for tag in sortedtags %}
-      <h2 id="{{ tag }}"><a href="{{ site.baseurl }}/tags/{{ tag }}.html">{{ tag }}</a></h2>
-
+  {% capture tags %}
+    {% for tag in site.tags %}
+      {{ tag[0] }}
     {% endfor %}
-</div>
+  {% endcapture %}
+  {% assign sortedtags = tags | split:' ' | sort %}
+
+  {% for tag in sortedtags %}
+    <h2 id="{{ tag }}"><a href="{{ site.baseurl }}/tags/{{ tag }}.html">{{ tag }}</a></h2>
+
+  {% endfor %}
+
+
+     <!--  <div class="card-deck">
+        
+        {% for post in site.posts %}
+          <div class="card">
+            <img class="card-img-top" src="{{ site.baseurl }}/images/desert2.jpeg" alt="stock desert photo">
+
+            <div class="card-block">
+              <h4 class="card-title">{{ post.title }}</h4>
+              <h6 class="card-subtitle text-muted"> {{ post.date | date: "%b %-d, %Y" }}</h6>
+              <p class="card-text">{{ post.excerpt }}</p>
+              <a href="{{ post.url | prepend: site.baseurl }}" class="btn btn-primary">Open</a>
+            </div>
+          </div>
+        {% endfor %}
+        
+      </div> -->
