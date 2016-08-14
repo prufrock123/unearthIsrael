@@ -7,7 +7,7 @@ title: Lesson Categories
   <h1 class="display-2 page-header">Tags</h1>    
   
 
-  {% capture tags %}
+<!--   {% capture tags %}
     {% for tag in site.tags %}
       {{ tag[0] }}
     {% endfor %}
@@ -17,8 +17,19 @@ title: Lesson Categories
   {% for tag in sortedtags %}
     <h2 id="{{ tag }}"><a href="{{ site.baseurl }}/tags/{{ tag }}.html">{{ tag }}</a></h2>
 
-  {% endfor %}
+  {% endfor %} -->
 
+<div class="card-deck">
+  {% for tag in sortedtags %}
+        <div class="card">
+          <img class="card-img-top" src="{{ site.baseurl }}/images/{{ tag }}.jpeg" alt="Card image for tag category">
+          <div class="card-img-overlay">
+            <h4 class="card-title"><a href="{{ site.baseurl }}/tags/{{ tag }}.html">{{ tag }}</a></h4>
+            
+          </div>
+        </div>
+  {% endfor %}
+</div>  
 
      <!--  <div class="card-deck">
         
