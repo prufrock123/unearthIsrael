@@ -5,9 +5,9 @@ layout: default
 <h1 class="display-5 page-header">Posts tagged:</h1>
 <h1 class="display-2 page-header">{{ page.tag }}</h1>
 
-<ul>
+<ul class="list-group">
 {% for post in site.tags[page.tag] %}
-  <li>
+  <li class="list-group-item">
     {{ post.date | date: "%B %d, %Y" }}: <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
   </li>
 {% endfor %}
