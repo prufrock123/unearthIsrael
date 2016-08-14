@@ -22,11 +22,18 @@ title: Lesson Categories
 <div class="card-deck">
   {% for tag in sortedtags %}
         <div class="card">
-          <img class="card-img-top" src="{{ site.baseurl }}/images/{{ tag }}.jpeg" alt="Card image for tag category">
+        <a href="{{ site.baseurl }}/tags/{{ tag }}.html">
+        <!-- 
+        When I have finalized the tag categories, 
+        save the each image with its tag name <TAG NAME>
+        and just change the src attribute in the image tag below to the following:
+        src="{{ site.baseurl }}/images/{{ tag }}.jpeg"
+         -->
+          <img class="card-img-top" src="{{ site.baseurl }}/images/desert2.jpeg" alt="Card image for tag category">
           <div class="card-img-overlay">
-            <h4 class="card-title"><a href="{{ site.baseurl }}/tags/{{ tag }}.html">{{ tag }}</a></h4>
-            
+            <h1 class="card-title">{{ tag }}</h1>
           </div>
+        </a>
         </div>
   {% endfor %}
 </div>  
