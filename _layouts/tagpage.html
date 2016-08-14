@@ -2,7 +2,8 @@
 layout: default
 ---
 
-<h1>{{ page.tag }}</h1>
+<h1 class="display-5 page-header">Posts tagged:</h1>
+<h1 class="display-2 page-header">{{ page.tag }}</h1>
 
 <ul>
 {% for post in site.tags[page.tag] %}
